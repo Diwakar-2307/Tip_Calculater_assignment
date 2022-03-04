@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculater</title>
+    <! –– linking external css ––> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+      
+    <div id="container">
+        <h1> Tip Calculater</h1>
+
+        <! –– left side of the div ––> 
+        
+        
+        <div class= "col1">
+               
+            <p>Bill</p>
+            <p> $<input id="billamount" type="text" placeholder="&#36 Enter the bill amount" /></p>
+            
+            <p>Tips %</p>
+            <p> <input id="tip_per" type="text" placeholder="Enter Tip Percentage"/></p>
+            
+            <p>Number of peoples</p>
+            <p><input id="person" type="text"  placeholder="Enter number of people"/> </p>
+
+            <button type="button" onclick="tip_perPerson()">Calculate</button>
+        
+        </div>
+
+
+        <! –– right side of the div ––> 
+
+
+
+        <div class="col2">
+            <br>
+            <br>
+            <label >Tip<br>per person</label>
+            <p>$ <input type="text" id="tip_perP" placeholder="&#36" disabled></p>
+            <label >Total <br>per person</p></label>
+            <p>$ <input type="text" id="total_perP" placeholder="&#36" disabled></p>
+             
+
+
+        </div>
+
+
+    </div>
+
+    <! –– external javascript ––> 
+
+
+    <script src="tip.js"></script>
+
+    
+    </body>
+</html>
